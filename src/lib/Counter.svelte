@@ -41,6 +41,7 @@
 		touch-action: manipulation;
 		color: var(--text-color);
 		font-size: 2rem;
+		cursor: pointer;
 	}
 
 	.counter button:hover {
