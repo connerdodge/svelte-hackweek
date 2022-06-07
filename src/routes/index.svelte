@@ -2,10 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
@@ -20,11 +16,6 @@
 			</picture>
 		</div>
 	</h1>
-
-	<h3>
-		Count
-	</h3>
-	<Counter />
 </section>
 
 <style>
