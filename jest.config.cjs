@@ -8,5 +8,6 @@ module.exports = {
   },
   moduleFileExtensions: ['js', 'ts', 'svelte'],
   testEnvironment: "jsdom",
+  testPathIgnorePatterns: ["/node_modules/", "playwright/tests"],
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"]
 }
