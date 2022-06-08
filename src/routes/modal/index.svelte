@@ -27,6 +27,7 @@
     border-radius: 5px;
     background-color: rgb(120, 235, 75);
     cursor: pointer;
+    font-weight: bold;
   }
 
   .open-btn:hover {
