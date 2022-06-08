@@ -8,7 +8,8 @@
 <div class="background" class:show on:click={() => show = false}></div>
 <div class="modal-content" class:show>
   <span on:click={() => show = false} class="close">&times;</span>
-  <p>Modal text here</p>
+  <slot name="title"><h3>Default title</h3></slot>
+  <slot name="description"><p>Default description</p></slot>
 </div>
 
 <style>
@@ -32,9 +33,10 @@
     position: fixed;
     z-index: 2;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 50%; /* Could be more or less, depending on screen size */
     filter: drop-shadow(0 0 20px #333);
   }

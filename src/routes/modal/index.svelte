@@ -9,9 +9,12 @@
 </svelte:head>
 
 <section>
-  <button class="open-btn" on:click|preventDefault={modal?.openModal}>Open Modal</button>
+  <button class="open-btn" on:click={modal?.openModal}>Open Modal</button>
 
-  <Modal bind:this={modal} />
+  <Modal bind:this={modal}>
+    <h3 slot="title">Modal Title</h3>
+    <p slot="description">This is my modal description</p>
+  </Modal>
 </section>
 
 <style>
