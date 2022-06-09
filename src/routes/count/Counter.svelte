@@ -1,5 +1,5 @@
 <script>
-	import { count } from '../../stores/count';
+	import { count } from '$stores/count';
 </script>
 
 <div class="counter">
