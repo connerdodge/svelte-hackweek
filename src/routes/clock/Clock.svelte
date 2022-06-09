@@ -26,15 +26,16 @@
 <style>
   .container {
     background-color: #000;
-    margin: 10% 0 0 33%;
-    max-width: 355px;
+    margin: 10% 0 0 31%;
+    max-width: 385px;
     border-radius: 10px;
+    display: flex;
   }
 
   .clock {
     color: red;
     width: 100%;
-    margin: 0 20px;
+    margin-left: 50px;
     font-size: 64px;
     font-weight: 500;
     font-family: 'Orbitron', sans-serif;
