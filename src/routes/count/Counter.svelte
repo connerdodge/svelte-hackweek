@@ -1,9 +1,9 @@
 <script>
-	let count = 0;
+	import { count } from '../../stores/count';
 </script>
 
 <div class="counter">
-	<button data-testid="decrement-btn" on:click={() => (count -= 1)} aria-label="Decrease the counter by one">
+	<button data-testid="decrement-btn" on:click={() => ($count -= 1)} aria-label="Decrease the counter by one">
 		<svg aria-hidden="true" viewBox="0 0 1 1">
 			<path d="M0,0.5 L1,0.5" />
 		</svg>
@@ -11,11 +11,11 @@
 
 	<div class="counter-viewport">
 		<div class="counter-digits">
-			<strong data-testid="counter">{count}</strong>
+			<strong data-testid="counter">{$count}</strong>
 		</div>
 	</div>
 
-	<button data-testid="increment-btn" on:click={() => (count += 1)} aria-label="Increase the counter by one">
+	<button data-testid="increment-btn" on:click={() => ($count += 1)} aria-label="Increase the counter by one">
 		<svg aria-hidden="true" viewBox="0 0 1 1">
 			<path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" />
 		</svg>
