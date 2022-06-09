@@ -53,14 +53,15 @@
   .container {
     background-color: #000;
     margin: 5% 0 0 32%;
-    max-width: 370px;
+    width: 370px;
     border-radius: 10px;
     display: flex;
   }
 
   .clock {
     width: 100%;
-    margin-left: 50px;
+    margin: 0 auto;
+    padding: 0 30px;
     font-size: 64px;
     font-weight: 500;
     font-family: 'Orbitron', sans-serif;
