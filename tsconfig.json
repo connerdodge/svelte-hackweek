@@ -13,6 +13,8 @@
 		"paths": {
 			"$stores": ["src/stores"],
 			"$stores/*": ["src/stores/*"],
+			"$lib":["src/lib"],
+			"$lib/*":["src/lib/*"]
 		}
 	}
 }
