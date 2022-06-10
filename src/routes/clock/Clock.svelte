@@ -25,7 +25,7 @@
   <h4>Color:</h4>
   {#each clockColors as color}
     <label>
-      <input type="radio" bind:group={selectedColor} name="colors" value={color} />
+      <input type="radio" bind:group={selectedColor} value={color} />
       {color.name}
     </label>
   {/each}

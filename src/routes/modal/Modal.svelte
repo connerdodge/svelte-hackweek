@@ -9,7 +9,7 @@
 
 <div class="background" class:show on:click={() => show = false}></div>
 {#if show}
-  <div class="modal-content" class:show transition:fly="{{ y: -100, duration: 250 }}">
+  <div class="modal-content" class:show transition:fly={{ y: -100, duration: 250 }}>
     <span on:click={() => show = false} class="close">&times;</span>
     <slot name="title"><h3>Default title</h3></slot>
     <slot name="description"><p>Default description</p></slot>
